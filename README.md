@@ -1,10 +1,10 @@
-# CHAINBASE NODE SETUP
+# CHAINBASE NODE OPERATOR SETUP
 
 ## SPEC
 ![SPECIFICATION](assets/spec.png)
 
 
-## SETUP
+## SETUP OPERATOR STEP BY STEP
 1. Install Dependency
    ```bash
     sudo apt update & sudo apt upgrade -y
@@ -71,15 +71,26 @@
         "website": "WEBSITE URL / GITHUB URL",
         "description": "ANY DESCRIPTION",
         "logo": "ANY PNG WITH MAX SIZE 1 MB",
-        "twitter": "YOUR TWITTER HANDLER"
+        "twitter": "YOUR TWITTER URL"
     }
    ```
-   now copy all data inside metadata.json and save with `ctrl+x` press `y` and press `enter`. and follow this step
-   - create github repository
-   - create file `metadata.json` and paste metadata.json from step before
+   now copy all data inside metadata.json and save with `ctrl+x` press `y` and press `enter`. and follow this step :
+   - create github repository.
+   - create file `metadata.json` and paste metadata.json from step before.
    - optional you can also upload your logo here and change your metadata logo with your logo url from github
 9.  Configure operator.yml
     ```bash
     nano operator.yml
     ```
-10. 
+    - find for `metadata_url:`.
+    - fill up with your metadata.json raw url from github.
+    - save with `ctrl+x` press `y` and press `enter`.
+10. Run The Operator
+    ```bash
+    eigenlayer operator register operator.yaml
+    ```
+11. Check The Operator Status
+    ```bash
+    eigenlayer operator status operator.yaml
+    ```
+12. DONE
