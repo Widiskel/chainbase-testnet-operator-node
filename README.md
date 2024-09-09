@@ -49,6 +49,10 @@
    ```
    eigenlayer operator keys import --key-type ecdsa opr PRIVATEKEY
    ```
+   - To Export EVM WALLET
+   ```bash
+   eigenlayer operator keys export -k ecdsa -p /root/.eigenlayer/operator_keys/opr.ecdsa.key.json
+   ```
 7. Configure and register Operator **(NEED 1 HOLESKY ETH FOR OPERATOR REGISTRATION FEE)**
    ```bash
    eigenlayer operator config create
