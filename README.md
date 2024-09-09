@@ -53,4 +53,15 @@
    ```bash
    eigenlayer operator config create
    ```
-8. 
+   fill up the prompt with : 
+   - operator address: Your Eigenlayer ETH address
+   - earnings address: press Enter
+   - ETH rpc url: https://ethereum-holesky-rpc.publicnode.com
+   - network: holesky
+   - signer type: local_keystore
+   - ecdsa key path:: /root/.eigenlayer/operator_keys/opr.ecdsa.key.json
+8. Configure metadata.json
+   ```bash
+   nano metadata.json
+   ```
+9.  
