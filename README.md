@@ -64,4 +64,22 @@
    ```bash
    nano metadata.json
    ```
-9.  
+   fill up the details like this example, remember this just example, change something that need to change
+   ```json
+    {
+        "name": "YOUR MONIKER / NAME",
+        "website": "WEBSITE URL / GITHUB URL",
+        "description": "ANY DESCRIPTION",
+        "logo": "ANY PNG WITH MAX SIZE 1 MB",
+        "twitter": "YOUR TWITTER HANDLER"
+    }
+   ```
+   now copy all data inside metadata.json and save with `ctrl+x` press `y` and press `enter`. and follow this step
+   - create github repository
+   - create file `metadata.json` and paste metadata.json from step before
+   - optional you can also upload your logo here and change your metadata logo with your logo url from github
+9.  Configure operator.yml
+    ```bash
+    nano operator.yml
+    ```
+10. 
