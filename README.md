@@ -84,7 +84,7 @@
    - optional you can also upload your logo here and change your metadata logo with your logo url from github
 9.  Configure operator.yml
     ```bash
-    nano operator.yaml
+    nano operator.yml
     ```
     - find for `metadata_url:`.
     - fill up with your metadata.json raw url from github.
